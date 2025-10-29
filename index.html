@@ -11,7 +11,10 @@
             font-family: 'Times New Roman', Times, serif;
             text-align: center;
             margin: 0;
-            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .nav-bar {
             background-color: white;
@@ -20,8 +23,11 @@
             justify-content: center;
             padding: 10px 0;
         }
-        .nav-item {
+        .nav-bar a {
             margin: 0 20px;
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+            color: black;
         }
     </style>
 </head>
@@ -29,9 +35,9 @@
     <h1>Aileen Alfaro</h1>
     <h2>Portfolio</h2>
     <div class="nav-bar">
-        <div class="nav-item">About</div>
-        <div class="nav-item">Contact</div>
-        <div class="nav-item">Personal</div>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="personal.html">Personal</a>
     </div>
 </body>
 </html>

@@ -24,14 +24,14 @@
             color: black;
             font-family: 'Times New Roman', Times, serif;
         }
+        .image-container {
+            margin: 20px 0;
+        }
         .contact-section {
             margin-top: 20px;
         }
-        .small-text {
-            font-size: 12px;
-        }
-        .tiny-text {
-            font-size: 10px;
+        .text-box {
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -43,18 +43,21 @@
         <a href="contact.html">Contact</a>
         <a href="personal.html">Personal</a>
     </div>
-    <img src="https://aileenalfaroarts.weebly.com/uploads/1/5/4/1/154167914/starfigure_orig.jpg" alt="Star Figure" />
+    <div class="image-container">
+        <img src="https://aileenalfaroarts.weebly.com/uploads/1/5/4/1/154167914/starfigure_orig.jpg" alt="Star Figure">
+    </div>
     <div class="contact-section">
         <h3>Contact</h3>
-        <p class="small-text">get in touch</p>
-        <label class="tiny-text">email</label>
-        <input type="email" placeholder="Your email" />
-        <br />
-        <label class="tiny-text">comments</label>
-        <textarea placeholder="Your comments"></textarea>
-        <br />
-        <button onclick="window.location.href='mailto:alfaroaileen661@gmail.com'">Submit</button>
+        <p style="font-size: small;">get in touch</p>
+        <div class="text-box">
+            <p style="font-size: x-small;">email</p>
+            <input type="text" name="email">
+        </div>
+        <div class="text-box">
+            <p style="font-size: x-small;">comments</p>
+            <input type="text" name="comments">
+        </div>
+        <button type="submit" onclick="window.location.href='mailto:alfaroaileen661@gmail.com'">Submit</button>
     </div>
 </body>
 </html>
-
